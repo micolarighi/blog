@@ -8,6 +8,7 @@ const query = `query GetDiscussion($number: Int!) {
       author {
         login
       }
+      publishedAt
       title
     }
   }

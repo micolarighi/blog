@@ -7,6 +7,7 @@ const query = `{
       nodes {
         title
         number
+        publishedAt 
       }
     }
   }
@@ -23,6 +24,8 @@ export async function load({ fetch }) {
   nodes.map((node) => {
     node.slug = slugify(node.title);
   });
+
+  console.log(nodes)
 
   return {
     nodes,
