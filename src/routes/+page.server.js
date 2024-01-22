@@ -25,7 +25,6 @@ export async function load({ fetch }) {
     node.slug = slugify(node.title);
   });
 
-  console.log(nodes)
 
   return {
     nodes,
