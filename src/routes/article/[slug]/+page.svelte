@@ -12,7 +12,7 @@
 	$: ({ discussion } = data);
 </script>
 
-<div class="bg-gray-800 px-12 py-6">
+<div class="bg-gray-900 md:px-48 px-8 py-6 min-h-screen">
 	<button class="text-white bg-gray-600 rounded-full px-2 pt-1 mb-6 text-xl" on:click={gotoHome}
 		><iconify-icon icon="mdi:arrow-left"></iconify-icon>
 	</button>
