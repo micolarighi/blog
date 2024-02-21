@@ -10,14 +10,14 @@
 </script>
 
 <div class="min-h-screen bg-gradient-to-tr from-gray-900 from-80% via-blue-900 to-blue-800">
-	<Title/>
+	<Title />
 	<Portfolio />
 	<div class="md:px-24 px-12 py-12">
 		<h1 class="text-2xl italic mb-4">Post Terbaru</h1>
-		<div class="grid md:grid-cols-4 grid-cols-1 gap-4">
+		<div class="grid md:grid-cols-3 grid-cols-1 gap-4">
 			{#each nodes as { title, number, slug, publishedAt }}
 				<button
-					class="border p-2 rounded font-bold backdrop-blur-3xl bg-white/10 cursor-pointer hover:bg-gray-700 transition ease-in-out"
+					class="border px-2 py-4 rounded font-bold backdrop-blur-3xl bg-white/10 cursor-pointer hover:bg-gray-700 transition ease-in-out"
 					on:click={goto(`/article/${slug}-${number}`)}
 				>
 					<button class="md:text-md text-md leading-tight">{title}</button>

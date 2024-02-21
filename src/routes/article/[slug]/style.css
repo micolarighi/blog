@@ -47,3 +47,11 @@
     margin: auto;
     display: block;
 }
+
+.highlight {
+    background-color: #001f50;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid white;
+}
