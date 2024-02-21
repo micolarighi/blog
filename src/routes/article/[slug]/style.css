@@ -59,3 +59,9 @@
     margin-top: 20px;
     border: 1px solid white;
 }
+
+@media (max-width: 960px) {
+    .highlight {
+        overflow-x: scroll;
+    }
+}

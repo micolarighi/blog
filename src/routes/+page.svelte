@@ -17,7 +17,7 @@
 		<div class="grid md:grid-cols-3 grid-cols-1 gap-4">
 			{#each nodes as { title, number, slug, publishedAt }}
 				<button
-					class="border px-2 py-4 rounded font-bold backdrop-blur-3xl bg-white/10 cursor-pointer hover:bg-gray-700 transition ease-in-out"
+					class="border px-2 py-2 rounded font-bold backdrop-blur-3xl bg-white/10 cursor-pointer hover:bg-gray-700 transition ease-in-out"
 					on:click={goto(`/article/${slug}-${number}`)}
 				>
 					<button class="md:text-md text-md leading-tight">{title}</button>
